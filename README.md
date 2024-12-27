@@ -7,7 +7,7 @@ A PHP client for the DeepSeek API with Laravel support.
 Install via Composer:
 
 ```bash
-composer require roblane/deepseek-api
+composer require lanos/deepseek-api
 ```
 
 For Laravel applications, the package will automatically register the service provider and facade.
@@ -33,7 +33,7 @@ php artisan vendor:publish --tag=config
 You can use the facade:
 
 ```php
-use Roblane\DeepSeek\Facades\DeepSeek;
+use Lanos\DeepSeek\Facades\DeepSeek;
 
 $response = DeepSeek::sendRequest('POST', 'endpoint', ['data' => 'value']);
 ```
@@ -41,7 +41,7 @@ $response = DeepSeek::sendRequest('POST', 'endpoint', ['data' => 'value']);
 Or use dependency injection:
 
 ```php
-use Roblane\DeepSeek\Interfaces\DeepSeekClientInterface;
+use Lanos\DeepSeek\Interfaces\DeepSeekClientInterface;
 
 class YourController
 {
@@ -59,7 +59,7 @@ class YourController
 ### Standalone Usage
 
 ```php
-use Roblane\DeepSeek\DeepSeekClient;
+use Lanos\DeepSeek\DeepSeekClient;
 use GuzzleHttp\Client;
 
 $client = new DeepSeekClient(new Client(), 'your_api_key');
