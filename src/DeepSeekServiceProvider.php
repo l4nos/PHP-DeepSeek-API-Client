@@ -14,7 +14,7 @@ class DeepSeekServiceProvider extends ServiceProvider
         $this->app->singleton(DeepSeekClientInterface::class, function ($app) {
             return new DeepSeekClient(
                 new Client([
-                    'timeout' => 60,
+                    'timeout' => 120,
                 ]),
                 Config::get('deepseek.api_key')
             );
