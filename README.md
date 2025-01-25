@@ -7,7 +7,7 @@ A PHP client for the DeepSeek API with Laravel support.
 Install via Composer:
 
 ```bash
-composer require lanos/deepseek-api
+composer require lanos/deepseek-client
 ```
 
 For Laravel applications, the package will automatically register the service provider and facade.
